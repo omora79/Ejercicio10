@@ -14,15 +14,24 @@ namespace ejercicio10
 
             //3 pedir datos en pantalla
             Console.WriteLine("Digite el primer numero: ");
-            num1 = Convert.ToDouble(Console.Read());
+            num1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite el segundo numero: ");
-            num2 = Convert.ToDouble(Console.Read());
+            num2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite el tercer numero: ");
-            num3 = Convert.ToDouble(Console.Read());
+            num3 = Convert.ToDouble(Console.ReadLine());
 
             // 4 calculos
 
             mayor = Math.Max(num1, Math.Max(num2, num3));
+            menor = Math.Min(num1, Math.Min(num2, num3));
+            medio = (num1 + num2 + num3) - (mayor + menor);
+
+            // 5 mostrar datos en pantalla
+            Console.WriteLine($"El numero mayor es: {mayor}");
+            Console.WriteLine($"El numero menor es: {menor}");
+            Console.WriteLine($"El numero de la mitad es: {medio}");
+
+
 
 
 
